@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<the1310.rx1310.app.tooler.ui.preferences.ToolerPreferenceCategory android:title="Category">
+		
+		
+	</the1310.rx1310.app.tooler.ui.preferences.ToolerPreferenceCategory>
+	
+	<the1310.rx1310.app.tooler.ui.preferences.ToolerPreferenceBorder/>
+	
+</PreferenceScreen>

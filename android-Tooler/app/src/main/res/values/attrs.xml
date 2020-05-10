@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+
+	<declare-styleable name="ToolerUI">
+		<attr name="uiColorIcon" format="reference" />
+		<attr name="uiColorDanger" format="reference" />
+		<attr name="uiColorWarning" format="reference" />
+		<attr name="uiColorSuccess" format="reference" />
+		<attr name="uiColorInfo" format="reference" />
+	</declare-styleable>
+
+</resources>

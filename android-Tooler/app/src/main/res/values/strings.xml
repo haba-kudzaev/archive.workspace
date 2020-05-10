@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="activity_MainActivity">@string/app_name_sm</string>
+	<string name="activity_SettingsActivity">Настройки приложения</string>
+	<string name="activity_AboutActivity">О программе</string>
+	<string name="activity_IntroActivity">introActivityLabel</string>
+	<string name="activity_DebugSettingsActivity">Debug settings</string>
+
+	<string name="tab_aideweb">AIDE Web</string>
+	<string name="tab_converters">Конверторы</string>
+	<string name="tab_tools">Инструменты</string>
+	<string name="tab_tools_superuser">Инструменты SU</string>
+	<string name="tab_other">Прочее</string>
+
+	<string name="menu_security_msg">Сообщение о безопасности</string>
+	<string name="menu_settings">@string/activity_SettingsActivity</string>
+	<string name="menu_settings_debug">@string/activity_DebugSettingsActivity</string>
+	<string name="menu_about">@string/activity_AboutActivity</string>
+	
+	<string name="security_msg">@string/menu_security_msg</string>
+	<string name="security_msg_desc">Данное приложение (Tooler for Android, Tooler) является свободным программным продуктом (free-software) с открытым исходным кодом (open-source).\n\nПриложение не содержит в себе кода для сбора и использования информации о пользователе, статистики использования и данных о местоположении.\n\nДабы удостовериться в этом, Вы можете посмотреть исходный код приложения на Github (все ссылки находятся в разделе «О программе» в секции «Полезные ссылки»).</string>
+	
+</resources>

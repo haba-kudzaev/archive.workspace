@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="the1310.rx1310.app.tooler" >
+	<original-package android:name="the1310.rx1310.app.tooler"/>
+
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+		
+	<supports-screens 
+		android:anyDensity="true" 
+		android:largeScreens="true" 
+		android:normalScreens="true" 
+		android:resizeable="true" 
+		android:smallScreens="true" 
+		android:xlargeScreens="true" />
+
+    <application
+		android:allowBackup="true"
+		android:hardwareAccelerated="true"
+		android:screenOrientation="portrait"
+        android:label="@string/app_name"
+		android:theme="@style/ToolerTheme"
+		android:icon="@mipmap/ic_launcher">
+		
+		<meta-data android:name="android.max_aspect" android:value="2.1"/>
+
+        <activity
+			android:fitsSystemWindows="true"
+			android:label="@string/app_name_sm"
+			android:theme="@style/ToolerTheme.Intro"
+			android:name=".activity.IntroActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+			<meta-data
+				android:name="android.app.shortcuts"
+				android:resource="@xml/shortcuts"/>
+
+        </activity>
+		
+		<activity
+			android:theme="@style/ToolerTheme.NoActionBar"
+			android:name=".activity.MainActivity"/>
+
+		<activity
+			android:label="@string/activity_SettingsActivity"
+			android:theme="@style/ToolerTheme.Preferences"
+			android:name=".activity.SettingsActivity">
+
+			<intent-filter>
+				<action android:name="android.intent.action.APPLICATION_PREFERENCES" />
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="com.cyanogenmod.category.LAUNCHER_PREFERENCES" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="tooler.settings" android:scheme="rx1310"/>
+			</intent-filter>
+
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="the1310.rx1310.app.tooler.activity.MainActivity"/>
+
+		</activity>
+		
+    </application>
+
+</manifest>

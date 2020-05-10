@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<string name="app_name" translatable="false">Tooler for Android</string>
+	<string name="app_name_sm" translatable="false">Tooler</string>
+	<string name="app_author" translatable="false">rx1310</string>
+	<string name="app_author_url" translatable="false">https://rx1310.github.io</string>
+	<string name="app_maintainer" translatable="false">@string/app_author</string>
+	<string name="app_maintainer_url" translatable="false">@string/app_author_url</string>
+	
+</resources>

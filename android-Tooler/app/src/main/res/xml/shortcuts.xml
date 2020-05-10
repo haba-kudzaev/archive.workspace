@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<shortcut
+		android:enabled="true"
+		android:icon="@drawable/ic_shortcut_settings"
+		android:shortcutId="goSettingsActivity"
+		android:shortcutShortLabel="@string/activity_SettingsActivity">
+
+		<intent
+			android:action="android.intent.action.MAIN"
+			android:targetClass="the1310.rx1310.app.tooler.activity.SettingsActivity"
+			android:targetPackage="the1310.rx1310.app.tooler" />
+
+	</shortcut>
+	
+	<shortcut
+		android:enabled="true"
+		android:icon="@drawable/ic_shortcut_about"
+		android:shortcutId="goAboutActivity"
+		android:shortcutShortLabel="@string/activity_AboutActivity">
+
+		<intent
+			android:action="android.intent.action.MAIN"
+			android:targetClass="the1310.rx1310.app.tooler.activity.AboutActivity"
+			android:targetPackage="the1310.rx1310.app.tooler" />
+
+	</shortcut>
+	
+	<shortcut
+		android:enabled="true"
+		android:icon="@drawable/ic_shortcut_debug"
+		android:shortcutId="goDebugSettingsActivity"
+		android:shortcutShortLabel="@string/activity_DebugSettingsActivity">
+
+		<intent
+			android:action="android.intent.action.MAIN"
+			android:targetClass="the1310.rx1310.app.tooler.activity.DebugSettingsActivity"
+			android:targetPackage="the1310.rx1310.app.tooler" />
+		
+	</shortcut>
+	
+</shortcuts>

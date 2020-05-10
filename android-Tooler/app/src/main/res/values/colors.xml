@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<color name="clrAccent">#185ABB</color>
+	<color name="clrPrimary">#313236</color>
+	<color name="clrWindow">#202125</color>
+	<color name="clrIcon">#ffffff</color>
+	<color name="clrDanger">#E57965</color>
+	<color name="clrWarning">#E9C480</color>
+	<color name="clrInfo">#1E88E5</color>
+	<color name="clrSuccess">#77A47A</color>
+	
+</resources>
