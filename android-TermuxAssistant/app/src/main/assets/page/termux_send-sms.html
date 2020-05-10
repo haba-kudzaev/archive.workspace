@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../styles.css" rel="stylesheet">
+  </head>
+  <body>
+
+	<div class="box">
+	  <p>Send SMS using Termux app.</p>
+	  <p>First you need to install these apps</p>
+	  <ol>
+		<li>Termux App</li>
+		<li>Termux API App</li>
+	  </ol>
+	  <hr>
+	  <p>Now open Termux and follow these steps to install speak-engine.</p>
+	  <p>Installation:</p>
+	  <code class="box">
+		$ apt update<br>
+		$ apt upgrade<br>
+		$ apt install termux-api<br><br>
+		<i>[ Message sending process: <span class="anim-spin">:</span> ]</i><br><br>
+		$ termux-sms-send -n <b>9999999999 text</b>
+	  </code>
+	  <ul>
+		<li><b>9999999999</b> — receiver number</li>
+		<li><b>text</b> — your message here</li>
+	  </ul>
+	</div>
+
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    package="o1310.rx1310.app.id1" >
+	
+	<supports-screens 
+		android:anyDensity="true" 
+		android:largeScreens="true" 
+		android:normalScreens="true" 
+		android:resizeable="true" 
+		android:smallScreens="true" 
+		android:xlargeScreens="true" />
+	
+    <application
+		android:screenOrientation="portrait"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/application_name"
+        android:theme="@style/AppTheme">
+        
+		<activity
+			android:fitsSystemWindows="true"
+			android:theme="@style/AppTheme.Splash"
+			android:name=".SplashActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+		
+		<activity
+			android:theme="@style/AppTheme.Preferences"
+			android:name=".SettingsActivity">
+
+			<intent-filter>
+				<action android:name="android.intent.action.APPLICATION_PREFERENCES" />
+				<category android:name="com.cyanogenmod.category.LAUNCHER_PREFERENCES" />
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:host="id1.settings"
+                    android:scheme="rx1310"/>
+			</intent-filter>
+
+		</activity>
+		
+		<activity
+			android:theme="@style/AppTheme.NoActionBar"
+			android:name=".MainActivity"/>
+		
+		<meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="true" />
+		<meta-data android:name="android.max_aspect" android:value="2.1" />
+		
+    </application>
+</manifest>

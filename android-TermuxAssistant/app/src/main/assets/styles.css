@@ -1,0 +1,191 @@
+/*!
+ * @author      rx1310 <rx1310@inbox.ru>
+ * @copyright   Copyright (c) o1310, 2020
+ * @license     MIT License
+ */
+
+* {
+  outline: none;
+  -webkit-touch-callout: none;
+  -webkit-box-sizing: border-box;
+		  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  -webkit-user-select: none;
+          user-select: none;
+}
+
+::-moz-selection {
+  background: #ffa500;
+  color: White;
+  text-shadow: none; 
+}
+  
+::selection {
+  background: #ffa500;
+  color: White;
+  text-shadow: none;
+}
+
+@viewport {
+  width: device-width; 
+}
+
+@font-face {
+  font-family: 'Fira Mono';
+  src: url('font.ttf');
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+html, body {
+  background: Black;
+  color: #fafafa;
+  padding: auto;
+  margin: auto;
+  font-family: "Fira Mono", monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5rem;
+  font-family: "Fira Mono", monospace;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+p { color: #BABABA; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 0.1em solid #353535;
+  border-top-style: dotted;
+  margin: 1em 0;
+  padding: 0; 
+}
+
+code {
+  color: #20C20E;
+  -webkit-user-select: text;
+          user-select: text;
+}
+
+a { color: #ffa500; }
+a:hover { color: #664600; }
+
+header {
+  text-align: center;
+  font-size: 1em;
+  padding: 2em;
+  margin-bottom: 1.2em;
+}
+
+header h1 {
+  margin-top: 0;
+}
+
+header p {
+  margin-bottom: 0px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+div.box {
+  margin: 0.5em 0.0em;
+  padding: 0.5em 1.1em;
+  width: auto;
+}
+
+.pill {
+  padding: 1.5em; 
+  margin: 1em 0;
+  border: 0.1em solid #303030; 
+  border-left-width: 0.5em;
+  border-left-color: #ffa500;
+}
+
+.pill h4, 
+.card h4 {
+  color: #ffa500;
+  margin-top: 0; 
+  margin-bottom: 0.2em;
+}
+
+.pill p:last-child,
+.card p:last-child {
+  margin-bottom: 0
+}
+
+.card {
+  padding: 1.5em; 
+  margin: 1em 0;
+  border: 0.1em solid #303030; 
+  text-align: left;
+}
+
+.card figure {
+  float: right;
+  margin: 0 0 0 1em;
+}
+
+.button {
+  color: #ffa500;
+  background: transparent;
+  border: 0.1em solid #303030;
+  padding: 0.8em 1em;
+}
+
+.button:hover {
+  color: White;
+  background: #ffa500;
+  border-color: White;
+}
+
+code.box {
+  margin: 1em 0;
+  border: 0.1em solid #0F530A; 
+  position: relative;
+  word-wrap: break-word;
+  display: block;
+  overflow-x: auto;
+  padding: 1.5em; 
+}
+
+code.box i { color: #739A72; }
+
+@-webkit-keyframes spin {
+  0% {
+	-webkit-transform: rotate(0deg);
+  } 100% {
+	-webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+	transform: rotate(0deg);
+  } 100% {
+	transform: rotate(360deg);
+  }
+}
+
+.anim-spin {
+  display: inline-block;
+  -webkit-animation: spin 0.1s linear infinite;
+          animation: spin 0.1s linear infinite;
+}
+
+img {
+  overflow: none;
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+}

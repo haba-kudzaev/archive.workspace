@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<color name="colorAccent">#ffa500</color>
+	<color name="colorPrimary">#000000</color>
+	<color name="design_snackbar_background_color">#ff313236</color>
+
+    <style name="AppTheme" parent="Theme.AppCompat">
+	    <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+		<item name="colorAccent">@color/colorAccent</item>
+		<item name="android:windowLightStatusBar">false</item>
+		<item name="android:navigationBarColor">@color/colorPrimary</item>
+		<item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+	
+	<style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+	
+	<style name="AppTheme.Preferences" parent="AppTheme">
+		<item name="android:windowActionBar">true</item>
+        <item name="android:windowNoTitle">false</item>
+		<item name="android:windowBackground">@color/colorPrimary</item>
+    </style>  
+	
+	<style name="AppTheme.Splash" parent="AppTheme.NoActionBar">
+		<item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="android:windowBackground">@drawable/app_splash</item>
+    </style>
+	
+</resources>
