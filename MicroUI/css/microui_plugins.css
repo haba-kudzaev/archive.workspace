@@ -1,0 +1,12 @@
+/*!
+ * @author      codev01 <codev01.private@gmail.com>
+ * @copyright   Copyright (c) Haba Kudzaev, 2019
+ * @license     MIT License
+ * @created     2019-04-26
+ */
+ 
+/* здесь можно подключать шрифты, иконки и прочее к уже
+   минифицированному пакету */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('../assets/material-design-icons/material-icons.css');

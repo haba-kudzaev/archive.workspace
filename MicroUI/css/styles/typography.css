@@ -1,0 +1,101 @@
+/*!
+ * @author      codev01 <codev01.private@gmail.com>
+ * @copyright   Copyright (c) Haba Kudzaev, 2019
+ * @license     MIT License
+ * @created     2019-04-22
+ */
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+[data-style*="align_left"] { text-align: left; }
+[data-style*="align_right"] { text-align: right; }
+[data-style*="align_center"] { text-align: center; }
+[data-style*="align_justify"] { text-align: justify; }
+[data-style*="muted"] { color: #47494F !important; }
+[data-style*="nowrap"] { white-space: nowrap; }
+[data-style*="lowercase"] { text-transform: lowercase; }
+[data-style*="uppercase"] { text-transform: uppercase; }
+[data-style*="capitalize"] { text-transform: capitalize; }
+
+[data-style*="danger"] { color: #E57965; }
+[data-style*="warning"] { color: #E9C480; }
+[data-style*="success"] { color: #77A47A; }
+[data-style*="info"] { color: #1E88E5; }
+[data-style*="accent"] { color: #86B0F3; }
+
+a {
+  color: #86B0F3;
+  font-weight: 500; 
+}
+
+blockquote {
+  position: relative;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.35;
+  letter-spacing: 0.08em; 
+}
+
+blockquote:before {
+  position: absolute;
+  left: -0.5em;
+  content: '“'; 
+}
+
+blockquote:after {
+  content: '”';
+  margin-left: -0.05em; 
+}
+
+mark {
+  background-color: #f4ff81; 
+}
+
+dt {
+  font-weight: 700; 
+}
+
+address {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+  font-style: normal; 
+}
+
+ul, ol {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0; 
+}
+
+code, kbd {
+  color: #81C784;
+  background-color: #35363B;
+  padding: 0.2em 0.5em;
+  -webkit-user-select: all;
+     -moz-user-select: all;
+      -ms-user-select: all;
+          user-select: all;
+  -webkit-border-radius: var(--border-radius);
+     -moz-border-radius: var(--border-radius);
+          border-radius: var(--border-radius);
+		  --border-radius: 0.5em;
+}
+
+kbd {
+  color: #FFA726;
+  word-break: break-word;
+}

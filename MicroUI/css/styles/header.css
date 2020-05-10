@@ -1,0 +1,45 @@
+/*!
+ * @author      codev01 <codev01.private@gmail.com>
+ * @copyright   Copyright (c) Haba Kudzaev, 2019
+ * @license     MIT License
+ * @created     2019-05-26
+ */
+ 
+header {
+  border-bottom: 0.1em solid rgba(59, 60, 63, .5);
+  text-align: center;
+  font-size: 1em;
+  padding: 2em;
+  margin-bottom: 1.2em;
+}
+
+header[shadow] {
+  border-bottom: none;
+  -webkit-box-shadow: var(--box-shadow);
+     -moz-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+		  --box-shadow: 0 0.15em 0.8em -0.2em rgba(0, 0, 0, .3);
+}
+
+header h1 {
+  color: #CDCFDA;
+  margin-top: 0px;
+}
+
+header p {
+  color: rgba(139, 140, 143, 0.8);
+  margin-bottom: 0px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+
+@media (min-width: 768px) {
+  
+  header {
+    padding: 3em 4em;
+    font-size: 1.5em;
+	text-align: left;
+  }
+  
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+	<meta charset="utf-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/microui.css" rel="stylesheet">
+	<script src="js/jquery.js"></script>
+	<script src="js/microui.js"></script>
+  </head>
+  <body>
+	
+	<header>
+	  <h1>История изменений</h1>
+	  <p>Полный список всех значимых изменений в проекте.</p>
+	</header>
+	
+	<div class="container">
+	  
+	  <div class="row">
+		
+		<div class="col-md-4">
+		  <div class="box" data-style="outline">
+			<h2>MicroUI 16</h2>
+		  </div>
+		</div><!-- .col-md-4 -->
+		
+		<div class="col-md-4">
+		  <div class="box" data-style="outline">
+			<h2>MicroUI 15</h2>
+			<ul>
+			  <li>Доработал стили для <code>box-list</code></li>
+			  <li>Доработал стили для таблиц</li>
+			  <li>Добавил свойство <code>shadow</code> для элемента Header</li>
+			  <li>Добавил фон к нажатому пункту в Box List (<code>.box-list</code>)</li>
+			</ul>
+		  </div>
+		</div><!-- .col-md-4 -->
+		
+		<div class="col-md-4">
+		  <div class="box" data-style="outline">
+			<h2>MicroUI 14 (rebirth)</h2>
+			<ul>
+			  <li>Полностью переписал MicroUI</li>
+			  <li>Сменил тему интерфейса на тёмную</li>
+			  <li>Добавил совместимость с сеткой Bootstrap 4 Grip</li>
+			  <li>Добааил совместимость с браузерами Mozilla Firefox, Opera, IE, Edge и Safari</li>
+			  <li>Добавил ripple-эффект (статичный и динамический)</li>
+			  <li>Добавил и изменил новые типы Box (indent, card, outline, code, gallery и list)</li>
+			  <li>Добавил стили к Checkbox, Radiobutton, Input и Textarea</li>
+			  <li>Добавил свойство <code>hide</code> для скрытия элемента на странице</li>
+			  <li>Добавил свойство <code>data-float</code> и значения <code>left</code> и <code>right</code> для размещения элемента слева или справа</li>
+			  <li>Добавил возможность подключать дополнительные модули к минифицированному пакету MicroUI через файл <i>microui_plugins.css</i></li>
+			  <li>Переработал стили для <code>&lt;code></code> и <kbd>&lt;kbd></kbd></li>
+			  <li>Переработал Alert</li>
+			  <li>Переработал Card (добавил head, сменил разметку, сменил цвет (Google))</li>
+			  <li>Переработал Header (добавил адаптивность и доработал разметку)</li>
+			  <li>Переработал Button (добавил два стиля кнопки (outline и flat))</li>
+			  <li>Переработал таблицы</li>
+			  <li>Переработал анимации и цвета интерфейса</li>
+			  <li>Полностью перешел на единицу <em>em</em></li>
+			  <li>Обновил шрифты Open Sans (Google)</li>
+			</ul>
+			<hr>
+			<div class="alert" data-style="warning">
+			  <p>Обратите внимание, что код в <code>box-code</code> не отображается нормально в браузере Google Chrome 74+ (и другие на базе Chromium) из-за свойства <code>tab-size: 0</code> в MicroUI. Я жду исправлений от Google или, возможно, найду решение проблемы сам.</p>
+			</div>
+			<div class="alert" data-style="info">
+			  <p>MicroUI 14 больше не обратносовместима с пред. версиями фреймворка!</p>
+			</div>
+		  </div>
+		</div><!-- .col-md-4 -->
+		
+	  </div><!-- .row -->
+	  
+	</div><!-- .container -->
+	
+	<footer>
+	  <div class="margin-px18" data-style="align_center">
+		<button class="button" data-style="outline danger" data-ripple="#E57965">Сообщить о проблеме</button>
+	  </div>
+	</footer>
+	
+  </body>
+</html>

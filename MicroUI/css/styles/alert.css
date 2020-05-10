@@ -1,0 +1,42 @@
+/*!
+ * @author      codev01 <codev01.private@gmail.com>
+ * @copyright   Copyright (c) Haba Kudzaev, 2019
+ * @license     MIT License
+ * @created     2019-05-25
+ */
+
+.alert {
+  border-left: 0.2em solid #9DA2A7;
+  margin-left: 0;
+  padding: 0 1em;
+}
+
+/* $data-style — атрибут для настройки Alert */
+.alert[data-style] {
+  color: inherit;
+}
+
+/* @danger — сообщение об опасности */
+.alert[data-style="danger"] {
+  border-left-color: #E57965;
+}
+
+/* @warning — предупреждающее сообщение */
+.alert[data-style="warning"] {
+  border-left-color: #E9C480;
+}
+
+/* @success — сообщение об успешном выполнении какой-то операции */
+.alert[data-style="success"] {
+  border-left-color: #77A47A;
+}
+
+/* @info — информативное сообщение */
+.alert[data-style="info"] {
+  border-left-color: #1E88E5;
+}
+
+/* @accent — простой Alert, но в цвет акцента */
+.alert[data-style="accent"] {
+  border-left-color: #86B0F3;
+}

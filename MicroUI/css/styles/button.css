@@ -1,0 +1,57 @@
+/*!
+ * @author      codev01 <codev01.private@gmail.com>
+ * @copyright   Copyright (c) Haba Kudzaev, 2019
+ * @license     MIT License
+ * @created     2019-04-22
+ */
+ 
+.button {
+  color: White;
+  background: #313236;
+  padding: 0.5em 0.8em;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-appearance: button;
+  -webkit-box-shadow: var(--box-shadow);
+     -moz-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+		  --box-shadow: 0 0.15em 0.5em -0.2em rgba(0, 0, 0, .1);
+  -webkit-border-radius: var(--border-radius);
+     -moz-border-radius: var(--border-radius);
+          border-radius: var(--border-radius);
+		  --border-radius: 0.5em;
+}
+
+.button[data-style*="rounded"] {
+  -webkit-border-radius: var(--border-radius);
+     -moz-border-radius: var(--border-radius);
+          border-radius: var(--border-radius);
+		  --border-radius: 1.5em!important;
+}
+
+.button[data-style*="flat"] {
+  background-color: transparent;
+  -webkit-box-shadow: var(--box-shadow);
+     -moz-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+		  --box-shadow: none;
+}
+
+.button[data-style*="outline"] {
+  border: 1px solid rgba(120, 120, 120, .2);
+  background-color: transparent;
+  -webkit-border-radius: var(--border-radius);
+     -moz-border-radius: var(--border-radius);
+          border-radius: var(--border-radius);
+		  --border-radius: 0.5em;
+  -webkit-box-shadow: var(--box-shadow);
+     -moz-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+		  --box-shadow: none;
+}
+
+.button a {
+  color: inherit;
+  text-decoration: none;
+}
