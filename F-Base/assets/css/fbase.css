@@ -1,0 +1,48 @@
+/*!
+ * @author      codev01 <codev01.private@gmail.com>
+ * @copyright   Copyright (c) S-Devs, 2018
+ */
+
+@import url(components/fbase.reset.css);
+@import url(components/fbase-header.css);
+@import url(components/fbase-footer.css);
+@import url(components/fbase-others.css);
+@import url(components/fbase-code_kbd.css);
+@import url(components/fbase-hr.css);
+@import url(components/fbase-a.css);
+@import url(components/fbase-filters.css);
+@import url(components/fbase-breadcrumbs.css);
+@import url(components/fbase-plate.css);
+@import url(components/fbase-anim.css);
+@import url(components/fbase-cardview.css);
+@import url(components/fbase-column.css);
+@import url(components/fbase-button.css);
+@import url(components/fbase-button.presets.css);
+@import url(components/fbase-alert.css);
+@import url(components/fbase-img.css);
+@import url(components/fbase-table.css);
+@import url(components/fbase-codebox.css);
+@import url(components/fbase-titlebar.css);
+@import url(components/fbase-ul.css);
+@import url(components/fbase-s2t.css);
+
+html, body {
+  background-color: #FBFBFB;
+  color: #212121;
+  padding: 0;
+  margin: 0;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+@media (min-width: 992px) {
+  body { zoom: 2.1; }
+  .breadcrumb,
+  .cardview,
+  footer,
+  table,
+  .column,
+  .titlebar,
+  .codebox { zoom: 1.2; }
+  div.alert { zoom: 1.3; }
+}

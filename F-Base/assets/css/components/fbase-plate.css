@@ -1,0 +1,24 @@
+.plate {
+  color: rgba(0, 0, 0, 0.87);
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 18px;
+  padding-left: 18px;
+  overflow: hidden;
+}
+
+.plate:after {
+  display: table-column;
+  clear: both;
+  content: "";
+}
+
+.plate .container {
+  margin-right: -.9375rem;
+  margin-left: -.9375rem;
+}
+
+@media (min-width: 544px) { .plate { max-width: 550px; } }
+@media (min-width: 768px) { .plate { max-width: 720px; } }
+@media (min-width: 992px) { .plate { max-width: 940px; } }
+@media (min-width: 1200px) { .plate { max-width: 1140px; } }

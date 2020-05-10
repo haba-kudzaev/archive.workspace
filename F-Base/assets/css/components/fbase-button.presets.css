@@ -1,0 +1,197 @@
+/* button-preset: Github */
+button.button-preset-github:after { content: "Github" }
+button.button-preset-github {
+  color: #333333;
+  border: 1px solid #333333;
+}
+
+button.button-preset-github:focus {
+  color: #fff;
+  background-color: #333333;
+  background: #333333;
+  border: 1px solid #333333;
+}
+
+button.button-preset-github:hover, 
+button.button-preset-github:active {
+  color: #fff;
+  background-color: #333333;
+  background: #333333;
+  border: 1px solid #333333;
+}
+
+/* button-preset: Facebook */
+button.button-preset-facebook:after { content: "Facebook" }
+button.button-preset-facebook {
+  color: #3b5998;
+  border: 1px solid #3b5998;
+}
+
+button.button-preset-facebook:focus {
+  color: #fff;
+  background-color: #3b5998;
+  background: #3b5998;
+  border: 1px solid #3b5998;
+}
+
+button.button-preset-facebook:hover, 
+button.button-preset-facebook:active {
+  color: #fff;
+  background-color: #3b5998;
+  background: #3b5998;
+  border: 1px solid #3b5998;
+}
+
+/* button-preset: Vkontakte */
+button.button-preset-vkontakte:after { content: "VKontakte" }
+button.button-preset-vkontakte {
+  color: #45668e;
+  border: 1px solid #45668e;
+}
+
+button.button-preset-vkontakte:focus {
+  color: #fff;
+  background-color: #45668e;
+  background: #45668e;
+  border: 1px solid #45668e;
+}
+
+button.button-preset-vkontakte:hover, 
+button.button-preset-vkontakte:active {
+  color: #fff;
+  background-color: #45668e;
+  background: #45668e;
+  border: 1px solid #45668e;
+}
+
+/* button-preset: Twitter */
+button.button-preset-twitter:after { content: "Twitter" }
+button.button-preset-twitter {
+  color: #1da1f2;
+  border: 1px solid #1da1f2;
+}
+
+button.button-preset-twitter:focus {
+  color: #fff;
+  background-color: #1da1f2;
+  background: #1da1f2;
+  border: 1px solid #1da1f2;
+}
+
+button.button-preset-twitter:hover, 
+button.button-preset-twitter:active {
+  color: #fff;
+  background-color: #1da1f2;
+  background: #1da1f2;
+  border: 1px solid #1da1f2;
+}
+
+/* button-preset: Instagram */
+button.button-preset-instagram:after { content: "Instagram" }
+button.button-preset-instagram {
+  color: #e1306c;
+  border: 1px solid #e1306c;
+}
+
+button.button-preset-instagram:focus {
+  color: #fff;
+  background-color: #e1306c;
+  background: #e1306c;
+  border: 1px solid #e1306c;
+}
+
+button.button-preset-instagram:hover, 
+button.button-preset-instagram:active {
+  color: #fff;
+  background-color: #e1306c;
+  background: #e1306c;
+  border: 1px solid #e1306c;
+}
+
+/* button-preset: YouTube */
+button.button-preset-youtube:after { content: "YouTube" }
+button.button-preset-youtube {
+  color: #cd201f;
+  border: 1px solid #cd201f;
+}
+
+button.button-preset-youtube:focus {
+  color: #fff;
+  background-color: #cd201f;
+  background: #cd201f;
+  border: 1px solid #cd201f;
+}
+
+button.button-preset-youtube:hover, 
+button.button-preset-youtube:active {
+  color: #fff;
+  background-color: #cd201f;
+  background: #cd201f;
+  border: 1px solid #cd201f;
+}
+
+/* button-preset: Yandex */
+button.button-preset-yandex:after { content: "Yandex" }
+button.button-preset-yandex {
+  color: #ffcc00;
+  border: 1px solid #ffcc00;
+}
+
+button.button-preset-yandex:focus {
+  color: Black;
+  background-color: #ffcc00;
+  background: #ffcc00;
+  border: 1px solid #ffcc00;
+}
+
+button.button-preset-yandex:hover, 
+button.button-preset-yandex:active {
+  color: Black;
+  background-color: #ffcc00;
+  background: #ffcc00;
+  border: 1px solid #ffcc00;
+}
+
+/* button-preset: Telegram */
+button.button-preset-telegram:after { content: "Telegram" }
+button.button-preset-telegram {
+  color: #0088cc;
+  border: 1px solid #0088cc;
+}
+
+button.button-preset-telegram:focus {
+  color: #fff;
+  background-color: #0088cc;
+  background: #0088cc;
+  border: 1px solid #0088cc;
+}
+
+button.button-preset-telegram:hover, 
+button.button-preset-telegram:active {
+  color: #fff;
+  background-color: #0088cc;
+  background: #0088cc;
+  border: 1px solid #0088cc;
+}
+
+/* button-preset: Google Plus */
+button.button-preset-google_plus:after { content: "Google+" }
+button.button-preset-google_plus {
+  color: #dd4b39;
+  border: 1px solid #dd4b39;
+}
+
+button.button-preset-google_plus:focus {
+  color: #fff;
+  background-color: #dd4b39;
+  background: #dd4b39;
+  border: 1px solid #dd4b39;
+}
+
+button.button-preset-google_plus:hover, 
+button.button-preset-google_plus:active {
+  color: #fff;
+  background-color: #dd4b39;
+  background: #dd4b39;
+  border: 1px solid #dd4b39;
+}

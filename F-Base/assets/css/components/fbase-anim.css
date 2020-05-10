@@ -1,0 +1,19 @@
+/* anim_zoom*/
+.anim_zoom { transition: 0.5s; }
+.anim_zoom.item:hover .anim_zoom { transform: scale(1.0); }
+.anim_zoom:hover { transform: scale(0.98) !important; }
+
+/* anim_spin */
+.anim_spin { animation: f_spin 8s infinite linear; }
+@keyframes f_spin {
+    from { transform:rotate(0deg); }
+    to { transform:rotate(360deg); }
+}
+
+/* anim_rotate */
+.anim_rotate {
+  display: inline-block;
+  padding: 0px;
+  transition: 1.0s ease-out;
+}
+.anim_rotate:hover { transform: rotate(-20deg); }

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#1880e0"> <!-- Chrome ActionBar Color -->
+	<meta name="msapplication-navbutton-color" content="#1880e0"> <!-- MS NavButton Color -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#1880e0"> <!-- iOS StatusBar Color -->
+	<link rel="icon" sizes="192x192" href="fbase/icon/page_icon.png">
+	<link href="assets/css/fbase.css" rel="stylesheet">
+	<link href="assets/icons/css/glyphicons.css" rel="stylesheet">
+	<script defer src="fbase/js/main.js"></script>
+	<script defer src="assets/js/s2t.js"></script>
+	<title>F-Base</title>
+  </head>
+  <body>
+
+	<!-- TitleBar -->
+	<div class="titlebar">
+	  <span>Главная</span>
+	</div>
+	<!-- /TitleBar -->
+
+	<!-- Header -->
+	<header>
+	  <h1>Добро пожаловать!</h1>
+	  <p id="fbaseStatus">Ошибка: не подгрузился скрипт <i>/js/main.js</i></p>
+	</header>
+	<!-- /Header -->
+
+	<!-- Breadcrumb -->
+	<ul class="breadcrumb">
+	  <li>Главная</li>
+	</ul>
+	<!-- /Breadcrumb -->
+
+	<a id="s2t" href="#" onclick="s2t(); return false;">
+	  Top
+	</a>
+	  
+	<!-- Plate -->
+	<div class="plate">
+	  <!-- Container -->
+	  <div class="container">
+
+		<noscript>
+		  <div class="alert danger">
+			<span class="ic ic-warning-sign"></span>
+			<h4>Страница работает некорректно!</h4>
+			<p>Возможно, Ваш браузер ограничивает возможности JavaScript или вовсе не поддерживает его.</p>
+			<p><b>Возможные решения:</b></p>
+			<ul>
+			  <li>Обновите Ваш браузер / систему до актцальной версии</li>
+			  <li>Обратитесь к разработчику браузера / производителю устройства</li>
+			  <li>Если есть возможность включить JavaScript через настройки браузера или системы, то включите его</li>
+			</ul>
+		  </div>
+		</noscript>
+
+		<div id="alertProjectTest" class="alert warning">
+		  <span class="ic ic-warning-sign"></span>
+		  <h4>F-Base находится на стадии тестирования</h4>
+		  <p>В данное время (на моменты разработки F-Base 2) на странице ведутся технические работы!</p>
+		  <button onclick="secretPage()" class="button-warning">Закрытая зона</button>
+		</div>
+
+		<!-- Карточка: О проекте -->
+		<div class="cardview">
+		  <div class="cardview-background-icon">
+			<img class="anim_zoom" src="fbase/icon/icon_fbase.png">
+		  </div>
+		  <div class="cardview-content">
+			<h1>О проекте</h1>
+			<h3>Что такое F-Base?</h3>
+			<p><b>F-Base</b> — легкий, красивый и простой в использовании веб-фреймворк в стиле <a href="https://ru.m.wikipedia.org/wiki/Material_Design">Material Design</a>.</p>
+			<h3>Где используется?</h3>
+			<p>F-Base разработан специально для мобильных устройств и может быть использован в мобильных приложениях (Напр.: учебники, справочники). Также, при помощи F-Base можно верстать полноценные веб-сайты.</p>
+		  </div>
+		  <hr>
+		  <ul class="cardview-links">
+			<li><a href="fbase/html/page_download.html">Загрузка фреймворка</a></li>
+			<li><a href="fbase/html/page_changelog.html">История изменений</a></li>
+			<li class="disabled"><a href="fbase/html/page_documentation.html">Документация</a></li>
+		  </ul>
+		</div>
+		<!-- /Карточка: О проекте  -->
+
+		<!-- Раздел: Особенности фреймворка -->
+		<div class="column column-border">
+		  <div class="column-content">
+			<h1>Особенности F-Base</h1>
+			<figure class="left">
+			  <img class="circle anim_zoom" src="fbase/thumb/support_iphone.png" width="70px">
+			</figure>
+			<h3>Поддержка iPhone и iPad</h3>
+			<p>F-Base также отлично работает на iPhone и iPad как на устройсвах Android.</p>
+			<hr>
+			<figure class="right">
+			  <img class="circle anim_zoom" src="fbase/thumb/support_tablets_and_mobile.png" width="70px">
+			</figure>
+			<h3>Адаптация для планшетов</h3>
+			<p>Страницы, стилизованные при помощи F-Base, хорошо адаптированы для устройств с большими экранами (планшеты и таблеты).</p>
+			<hr>
+			<figure class="left">
+			  <img class="circle anim_zoom" src="fbase/thumb/material_components.png" width="70px">
+			</figure>
+			<h3>Компоненты в стиле Material Design</h3>
+			<p>F-Base включает в себя компоненты и элементы выполнены в стиле Material Design по инструкциям Google.</p>
+			<hr>
+			<figure class="right">
+			  <img class="circle anim_spin" src="fbase/thumb/support.png" width="70px">
+			</figure>
+			<h3>Постоянная поддержка</h3>
+			<p>F-Base разрабатывается командой S-Devs. Мы заботимся об постоянных обновлениях и предоставляем постоянную поддержу своим пользователям.</p>
+			<hr>
+			<figure class="left">
+			  <img class="circle anim_zoom" src="fbase/thumb/only_css.png" width="70px">
+			</figure>
+			<h3>Работает на чистом CSS</h3>
+			<p>F-Base написан на чистом CSS-коде без использования JavaScript-модулей - это даёт определённый прирост в скорости работы и загрузки страницы.</p>
+		  </div>
+		</div>
+		<!-- /Раздел: Особенности фреймворка -->
+
+		<!-- Карточка: Мобильные приложения -->
+		<div class="cardview">
+		  <img class="cardview-background-image" src="fbase/banner/banner-app.png">
+		  <div class="cardview-content">
+			<h1>Мобильные приложения</h1>
+			<h3>Приложения Android</h3>
+			<p>F-Base можно использовать в мобильных придожениях Android (через WebView).</p>
+			<p class="text-muted">* идеально подходит для мобильных учебников и справочников</p>
+		  </div>
+		  <hr>
+		  <ul class="cardview-links">
+			<li class="disabled"><a href="">Подробнее</a></li>
+		  </ul>
+		</div>
+		<!-- /Карточка: Мобильные приложения -->
+
+		<!-- Карточка: Совместимость -->
+		<div class="cardview">
+		  <img class="cardview-background-image" src="fbase/banner/banner-compat.png">
+		  <div class="cardview-content">
+			<h1>Одно другому не мешает</h1>
+			<h3>Совместимость</h3>
+			<p>F-Base хорошо совместим с другими веб-фреймворками, как Twitter Bootstrap, Foundation, UiKit, MicroUI (SUi, UI.X) и пр.</p>
+			<h3 class="text-danger">Предупреждение</h3>
+			<p>Да, F-Base можно использовать вместе с другими фреймворками. Однако, в скором эту возможность скорее всего выпилят вообще из проекта. Как Вы могли бы заметить, классы в F-Base больше не начинаются с приставки <code>f</code>. Возможны конфликты имен классов в разных фреймворках.</p>
+		  </div>
+		</div>
+		<!-- /Карточка: Совместимость -->
+
+	  </div>
+	  <!-- /Container -->
+	</div>
+	<!-- /Plate -->
+
+	<!-- Footer -->
+	<footer>
+	  <b><span class="ic ic-link"></span>Ссылки</b>
+	  <ul>
+		<li>Репозиторий на <a href="https://github.com/S-Devs/F-Base">Github</a></li>
+		<li>Сообщество <a href="http://vk.com/s.devs">VKontakte</a></li>
+		<li>Написать на <a href="mailto:codev01.private@gmail.com">эл. почту</a></li>
+		<li><a href="http://sdevs.rf.gd">Официальный сайт</a> команды S-Devs</li>
+		<li><a href="https://github.com/S-Devs">Команда разработчиков</a></li>
+	  </ul>
+	  <hr>
+	  <b><span class="ic ic-info-sign"></span>Об F-Base</b>
+	  <ul class="list">
+		<li>Версия фреймворка: <span id="isVersion"></span></li>
+		<li>Версия Assets: <span id="isAssetsVersion"></span></li>
+		<li>Номер сборки: <span id="isBuildInfo"></span>
+		<li>Ветка разработки: <span id="isBranch"></span>
+	  </ul>
+	  <hr>
+	  <div class="copyright">
+		<p>Коммерческое использование материалов сайта запрещено! В остальных случаях обязательно наличие индексируемой ссылки со словом "Источник" на сайт или на страницу, содержащую этот материал.</p>
+		<ul>
+		  <li><a href="https://opensource.org/licenses/MIT">Лицензии открытого ПО</a></li>
+		</ul>
+		<p>&copy;&nbsp;Команда S-Devs, <span id="copyrightYear"></span></p>
+	  </div>
+	</footer>
+	<!-- /Footer -->
+
+  </body>
+</html>
+

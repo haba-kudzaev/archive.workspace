@@ -1,0 +1,91 @@
+div.codebox {
+  border: 1px solid #8CBD8F; 
+  border-style: dashed;
+  border-width: 1px;
+  border-radius: 8px;
+  margin-top: 18px;
+  margin-bottom: 10px;
+  padding: 35px 12px 12px 12px;
+  position: relative;
+  word-wrap: break-word;
+  white-space: nowrap;
+  overflow-y: auto;
+}
+
+div.codebox code {
+  background-color: transparent;
+  background: transparent;
+  color: #5C905E;
+  font-family: monospace;
+}
+
+div.codebox code:hover,
+div.codebox code { border: 0px solid transparent; }
+div.codebox i { color: #8F8F8F; }
+div.codebox b { color: #D7745B; font: bold; }
+
+span.codebox-head:after {
+  color: #989898;
+  font-size: 12px;
+  font-weight: 700;
+  left: 15px;
+  letter-spacing: 1px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 15px;
+  font: bold;
+  content: "КОД";
+}
+
+span.codebox-head.error:after { content: "ОШИБОЧНЫЙ КОД"; }
+span.codebox-head.success:after { content: "ВЕРНЫЙ КОД"; }
+span.codebox-head.lang-basic:after { content: "КОД BASIC"; }
+span.codebox-head.lang-bash:after { content: "BASH"; }
+span.codebox-head.lang-c:after { content: "КОД C"; }
+span.codebox-head.lang-cpp:after { content: "КОД C++"; }
+span.codebox-head.lang-csharp:after { content: "КОД C#"; }
+span.codebox-head.lang-fsharp:after { content: "КОД F#"; }
+span.codebox-head.lang-fortan:after { content: "КОД FORTAN"; }
+span.codebox-head.lang-go:after { content: "КОД GO"; }
+span.codebox-head.lang-html:after { content: "КОД HTML"; }
+span.codebox-head.lang-java:after { content: "КОД JAVA"; }
+span.codebox-head.lang-java_script:after { content: "КОД JAVASCRIPT"; }
+span.codebox-head.lang-kotlin:after { content: "КОД KOTLIN"; }
+span.codebox-head.lang-lua:after { content: "КОД LUA"; }
+span.codebox-head.lang-objective_c:after { content: "КОД OBJECTIVE-C"; }
+span.codebox-head.lang-pascal:after { content: "КОД PASCAL"; }
+span.codebox-head.lang-python:after { content: "КОД PYTHON"; }
+span.codebox-head.lang-php:after { content: "КОД PHP"; }
+span.codebox-head.lang-powershell:after { content: "КОД POWERSHELL"; }
+span.codebox-head.lang-ruby:after { content: "КОД RUBY"; }
+span.codebox-head.lang-xhtml:after { content: "КОД XHTML"; }
+span.codebox-head.lang-css:after { content: "КОД CSS"; }
+span.codebox-head.lang-swift:after { content: "КОД SWIFT"; }
+span.codebox-head.lang-jquery:after { content: "КОД JQUERY"; }
+span.codebox-head.lang-sql:after { content: "КОД SQL"; }
+span.codebox-head.lang-mysql:after { content: "КОД MYSQL"; }
+span.codebox-head.lang-jni:after { content: "КОД JNI (NDK)"; }
+span.codebox-head.lang-java_android:after { content: "КОД JAVA (ANDROID)"; }
+span.codebox-head.lang-terminal:after { content: "LINUX SHELL"; }
+span.codebox-head.lang-script:after { content: "SCRIPT"; }
+span.codebox-head.lang-txt:after { content: "ТЕКСТ"; }
+span.codebox-head.lang-other:after { content: "НЕИЗВЕСТНЫЙ ЯЗЫК"; }
+span.codebox-head.lang-smali:after { content: "КОД SMALI"; }
+span.codebox-head.lang-xml:after { content: "КОД XML"; }
+span.codebox-head.lang-markdown:after { content: "КОД MARKDOWN"; }
+span.codebox-head.lang-yaml:after { content: "КОД YAML"; }
+span.codebox-head.lang-scala:after { content: "КОД SCALA"; }
+span.codebox-head.lang-dart:after { content: "КОД DART"; }
+span.codebox-head.lang-coffeescript:after { content: "КОД COFFEESCRIPT"; }
+span.codebox-head.lang-actionscript:after { content: "КОД ACTIONSCRIPT"; }
+span.codebox-head.lang-applescript:after { content: "КОД APPLESCRIPT"; }
+span.codebox-head.lang-asp:after { content: "КОД ASP"; }
+span.codebox-head.lang-clojure:after { content: "КОД CLOJURE"; }
+span.codebox-head.lang-cobol:after { content: "КОД COBOL"; }
+span.codebox-head.lang-erlang:after { content: "КОД ERLANG"; }
+span.codebox-head.lang-groovy:after { content: "КОД GROOVY"; }
+span.codebox-head.lang-haskell:after { content: "КОД HASKELL"; }
+span.codebox-head.lang-lisp:after { content: "КОД LISP"; }
+span.codebox-head.lang-perl:after { content: "КОД PERL"; }
+span.codebox-head.lang-scheme:after { content: "КОД SCHEME"; }
+

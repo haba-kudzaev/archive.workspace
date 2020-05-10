@@ -1,0 +1,32 @@
+table {
+  text-align: center;
+  background-color: #fff;
+  border-collapse: collapse;
+  width: 100%;
+  -webkit-box-shadow: 0 3px 10px -1px rgba(0, 0, 0, 0.10);
+     -moz-box-shadow: 0 3px 10px -1px rgba(0, 0, 0, 0.10);
+	      box-shadow: 0 3px 10px -1px rgba(0, 0, 0, 0.10);
+}
+
+table tr th,
+table tr td {
+  border: 1px solid #E1E1E1;
+  padding: 7px 8px;
+  transition: 0.5s; 
+}
+
+table td.empty {
+  background: linear-gradient(45deg, #ECECEC 25%, #E6E6E6 0, #E6E6E6 50%, #ECECEC 0, #ECECEC 75%, #E6E6E6 0);
+  background-size: 30px 30px;
+}
+
+table tr th:hover,
+table tr td:hover {
+  border: 1px solid #D4D4D4;
+  transition: 0.5s;
+}
+
+table tr td { text-align: left; }
+table thead,
+table tfoot { background-color: #E9E9E9; font: bolder; }
+table tbody tr:nth-child(even) { background-color: #F5F5F5; }

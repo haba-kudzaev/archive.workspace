@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#1880e0"> <!-- Chrome ActionBar Color -->
+	<link rel="icon" sizes="192x192" href="../../icon/page_icon.png">
+	<link href="../../../assets/css/fbase.css" rel="stylesheet">
+	<link href="../../../assets/icons/css/glyphicons.css" rel="stylesheet">
+	<title>Footer • Документация — F-Base</title>
+  </head>
+  <body>
+
+	<!-- TitleBar -->
+	<div class="titlebar">
+	  <span>Footer - "подвал" для страницы</span>
+	</div>
+	<!-- .TitleBar -->
+
+	<!-- Header -->
+	<header>
+	  <h1>Документация</h1>
+	  <p>Footer</p>
+	</header>
+	<!-- .Header -->
+
+	<!-- Breadcrumb -->
+	<ul class="breadcrumb">
+	  <li><a href="../../../index.html">Главная</a></li>
+	  <li><a href="../page_documentation.html">Документация</a></li>
+	  <li>Footer</li>
+	</ul>
+	<!-- .Breadcrumb -->
+
+	<!-- Plate -->
+	<div class="plate">
+	  <!-- Container -->
+	  <div class="container">
+
+		<noscript>
+		  <div class="alert danger">
+			<span class="glyphicon glyphicon-warning-sign"></span>
+			<h4>Страница работает некорректно!</h4>
+			<p>Возможно, Ваш браузер ограничивает возможности JavaScript или вовсе не поддерживает его.</p>
+			<p><b>Возможные решения:</b></p>
+			<ul>
+			  <li>Обновите Ваш браузер / систему до актцальной версии</li>
+			  <li>Обратитесь к разработчику браузера производителю устройства</li>
+			  <li>Если есть возможность включить JavaScript через настройки браузера или системы, то включите его</li>
+			</ul>
+		  </div>
+		</noscript>
+
+		<!-- Раздел: О Header -->
+		<div class="column">
+		  <div class="column-content">
+			<h1>О компоненте</h1>
+			<h3>Что такое Footer?</h3>
+			<p><b>Footer</b> - это блок в нижней части страницы. Содержит полезную, но не первостепенную информацию. В футер можно вынести: копирайт, название студии, которая разрабатывала сайт, контакты. Иногда в футере дублируются пункты меню.</p>
+			<h3>Footer в F-Base</h3>
+			<p>В F-Base Footer представлен ввиде блока в конце страницы и затемнен на фоне основного контента.</p>
+			<p>Footer имеет всего 4 элемента внутри:</p>
+			<ol>
+			  <li>Список ссылок - ссылки на нужные ресурсы / сайты (представлен тегом <code>&lt;ul&gt;</code>)</li>
+			  <li>Заголовок списка ссылок (представлен тегом <code>&lt;b&gt;</code>)</li>
+			  <li>Разделитель (представлен тегом <code>&lt;hr&gt;</code>)</li>
+			  <li>Блок копирайта (представлен тегом <code>&lt;div&gt;</code> с классом <code>copyright</code>)</li>
+			</ol>
+		  </div>
+		  <ul class="column-links">
+			<li><a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/footer">Описание Footer с сайта Mozilla Developer</a></li>
+			<li><a href="https://html5book.ru/html5-semantic-elements/#part6">Описание Footer с сайта HTML5BOOK</a></li>
+		  </ul>
+		</div>
+		<!-- /Раздел: О Header -->
+
+		<!-- Раздел: Добавление Header -->
+		<div class="column column-border">
+		  <div class="column-content">
+			<h1>Добавление Footer на страницу</h1>
+			<h3>Подготовка к добавлению Header</h3>
+			<p>Для начала необходимо <a href="../page_download.html">скачать</a> и подключить файл стилей <i>css/fbase.css</i> к нашей странице:</p>
+			<div class="codebox">
+			  <span class="codebox-head lang-html"></span>
+			  <code>
+				<i>&lt;-- Файл стилей F-Base --&gt;</i><br>
+				&lt;link href="<b>css/fbase.css</b>" rel="stylesheet"&gt;
+			  </code>
+			</div>
+			<div class="alert warning">
+			  <h4>Необходимо заранее поместить файл <b>fbase.css</b> в папку <b>css</b>!</h4>
+			  <p>Иначе стили не применятся.</p>
+			</div>
+			<h3>Добавление тега <code>&lt;footer&gt;</code></h3>
+			<p>Теперь, когда все стили подключены, необходимо в корне тега <code>&lt;body&gt;</code> поместить тег <code>&lt;footer&gt;</code>:</p>
+			<div class="codebox">
+			  <span class="codebox-head lang-html"></span>
+			  <code>
+				&lt;body&gt;<br><br>
+				&nbsp;&nbsp;<i>&lt;!-- Footer --&gt;</i><br>
+				&nbsp;&nbsp;&lt;footer&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;b&gt;&lt;span class=&quot;ic ic-link&quot;&gt;&lt;/span&gt;Ссылки&lt;/b&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Наш &lt;a href=&quot;www.example.com&quot;&gt;сайт&lt;/a&gt;&lt;/li&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Наш &lt;a href=&quot;www.public.com&quot;&gt;паблик&lt;/a&gt;&lt;/li&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Написать на &lt;a href=&quot;mailto:codev01.private@gmail.com&quot;&gt;эл. почту&lt;/a&gt;&lt;/li&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;hr&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;b&gt;&lt;span class=&quot;ic ic-info-sign&quot;&gt;&lt;/span&gt;Список&lt;/b&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class=&quot;list&quot;&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Пункт 1&lt;/li&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Пункт 2&lt;/li&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Пункт 3&lt;/li&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;hr&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;copyright&quot;&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Коммерческое использование материалов сайта запрещено! В остальных случаях обязательно наличие индексируемой ссылки со словом &quot;Источник&quot; на сайт или на страницу, содержащую этот материал.&lt;/p&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href=&quot;https://opensource.org/licenses/MIT&quot;&gt;Лицензии открытого ПО&lt;/a&gt;&lt;/li&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;&copy;&nbsp;Моя команда, 2018&lt;/p&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+				&nbsp;&nbsp;&lt;/footer&gt;<br>
+				&nbsp;&nbsp;<i>&lt;!-- /Footer --&gt;</i><br><br>
+				&lt;/body&gt;
+			  </code>
+			</div>
+			<p>В этом случае, нам не нужно прописывать класс <code>f</code>, как это было в F-Base 0.4. Все стили применяются к тегу.</p>
+			<h3>Пояснения к коду</h3>
+			<ul>
+			  <li><code>&lt;span class=&quot;ic ic-link&quot;&gt;&lt;/span&gt;</code> - добавляет иконку к названию раздела в футере. Класс <code>ic</code> к тегу <code>&lt;span&gt;</code> обязателен, но можно и вовсе не использовать иконку. <span class="text-muted">Можно использовать любые иконки (BS Glyphicons, Font Awesome или др.).</span></li>
+			  <li><code>&lt;ul class=&quot;list&quot;&gt; ... &lt;/ul&gt;</code> - добавляет маркерованный список в футер.</li>
+			  <li><code>&lt;div class=&quot;copyright&quot;&gt; ... &lt;/div&gt;</code> - добавляет блок с копирайтом в футер. Также можно добавить список ссылок <code>&lt;ul&gt;</code>, как на примере в конце этой страницы.</li>
+			</ul>
+		  </div>
+		</div>
+		<!-- /Раздел: Добавление Header -->
+
+		<div class="alert success">
+		  <h4>Готово!</h4>
+		  <p>Теперь Footer добавлен на страницу.</p>
+		  <p>Ниже показан пример Footer.</p>
+		</div>
+
+	  </div>
+	  <!-- /Container -->
+	</div>
+	<!-- /Plate -->
+
+	<!-- Footer -->
+	<footer>
+	  <b><span class="ic ic-link"></span>Ссылки</b>
+	  <ul>
+		<li>Наш <a href="www.example.com">сайт</a></li>
+		<li>Наш <a href="www.public.com">паблик</a></li>
+		<li>Написать на <a href="mailto:codev01.private@gmail.com">эл. почту</a></li>
+	  </ul>
+	  <hr>
+	  <b><span class="ic ic-info-sign"></span>Список</b>
+	  <ul class="list">
+		<li>Пункт 1</li>
+		<li>Пункт 2</li>
+		<li>Пункт 3</li>
+	  </ul>
+	  <hr>
+	  <div class="copyright">
+		<p>Коммерческое использование материалов сайта запрещено! В остальных случаях обязательно наличие индексируемой ссылки со словом "Источник" на сайт или на страницу, содержащую этот материал.</p>
+		<ul>
+		  <li><a href="https://opensource.org/licenses/MIT">Лицензии открытого ПО</a></li>
+		</ul>
+		<p>© Моя команда, 2018</p>
+	  </div>
+	</footer>
+	<!-- /Footer -->
+	  
+  </body>
+</html>
+

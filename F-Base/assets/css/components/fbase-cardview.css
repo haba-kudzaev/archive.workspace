@@ -1,0 +1,84 @@
+.cardview {
+  border-top: 1px solid #EDEDED;
+  border-radius: 8px;
+  background-color: White;
+  margin: 18px;
+  position: static;
+  -webkit-box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.4);
+     -moz-box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.4);
+}
+
+.cardview div.cardview-content { padding: 4px 26px 18px 26px; }
+
+.cardview img.cardview-background-image {
+  background-color: #fff;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+	      box-shadow: none;
+}
+
+.cardview div.cardview-background-icon {
+  background-color: #1880e0;
+  display: block;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 28px 38px 28px 38px;
+}
+
+.cardview div.cardview-background-icon img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+  width: 120px;
+}
+
+.cardview ul.cardview-buttons {
+  display: inline-block;
+  margin-left: -18px;
+  margin-bottom: 6px;
+  margin-top: 4px;
+  overflow: scroll;
+}
+
+.cardview ul.cardview-buttons li { display: inline; }
+.cardview ul.cardview-buttons li button { margin-bottom: 8px; }
+.cardview hr { margin: 0 0 18px 0; }
+
+.cardview ul.cardview-links {
+  list-style: none;
+  display: inline-block;
+  width: 100%;
+  margin-left: -40px;
+  margin-top: -10px;
+}
+
+/*.cardview ul.cardview-links li {}*/
+
+.cardview ul.cardview-links li a {
+  color: #1880e0;
+  padding-left: 18px;
+  padding-right: 28px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  position: relative;
+  display: block;
+  transition: 0.5s;
+}
+
+.cardview ul.cardview-links li a:hover {
+  text-decoration: none;
+  border-bottom: 0px solid transparent;
+  border-bottom-style: none;
+  background-color: #E5EFF6;
+}
+
+.cardview ul.cardview-links li a:before { content: "› "; }

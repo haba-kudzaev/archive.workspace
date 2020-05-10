@@ -1,0 +1,7 @@
+ul.log li {
+  margin-left: -20px;
+  list-style: circle;
+}
+
+ul.log li:hover { list-style: disc; }
+ul.log li:after { content: ";"; }

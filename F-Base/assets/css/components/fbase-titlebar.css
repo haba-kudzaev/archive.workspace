@@ -1,0 +1,16 @@
+div.titlebar {
+  padding: 12px 18px 12px 18px;
+  background: White;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 3;
+  overflow-y: scroll;
+  word-wrap: break-word;
+  white-space: nowrap;
+  -webkit-box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.3);
+     -moz-box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.3);*/
+}

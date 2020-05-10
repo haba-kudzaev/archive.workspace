@@ -1,0 +1,32 @@
+img {
+  overflow: none;
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-box-shadow: 0 3px 10px -1px rgba(0, 0, 0, 0.20);
+     -moz-box-shadow: 0 3px 10px -1px rgba(0, 0, 0, 0.20);
+	      box-shadow: 0 3px 10px -1px rgba(0, 0, 0, 0.20);
+}
+
+.thumb {
+  border: 3px solid #CBCBCB;
+  box-shadow: none;
+  transition: 0.5s;
+}
+
+.thumb:hover,
+img.f:hover { border-color: #1880e0; }
+
+.left {
+  float: left;
+  margin: 0 1em 0 0;
+}
+
+.right {
+  float: right;
+  margin: 0 0 0 1em;
+}
+
+img.circle { border-radius: 100% !important; }
+img.square { border-radius: 0% !important; }
+img.rounded { border-radius: 8px !important; }
+img.oval { border-radius: 40% !important; }

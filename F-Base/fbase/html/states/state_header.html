@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#1880e0"> <!-- Chrome ActionBar Color -->
+	<link rel="icon" sizes="192x192" href="../../icon/page_icon.png">
+	<link href="../../../assets/css/fbase.css" rel="stylesheet">
+	<link href="../../../assets/icons/css/glyphicons.css" rel="stylesheet">
+	<title>Header • Документация — F-Base</title>
+  </head>
+  <body>
+
+	<!-- TitleBar -->
+	<div class="titlebar">
+	  <span>Header - заголовок страницы</span>
+	</div>
+	<!-- .TitleBar -->
+
+	<!-- Header -->
+	<header>
+	  <h1>Документация</h1>
+	  <p>Header</p>
+	</header>
+	<!-- .Header -->
+
+	<!-- Breadcrumb -->
+	<ul class="breadcrumb">
+	  <li><a href="../../../index.html">Главная</a></li>
+	  <li><a href="../page_documentation.html">Документация</a></li>
+	  <li>Header</li>
+	</ul>
+	<!-- .Breadcrumb -->
+
+	<!-- Plate -->
+	<div class="plate">
+	  <!-- Container -->
+	  <div class="container">
+
+		<noscript>
+		  <div class="alert danger">
+			<span class="glyphicon glyphicon-warning-sign"></span>
+			<h4>Страница работает некорректно!</h4>
+			<p>Возможно, Ваш браузер ограничивает возможности JavaScript или вовсе не поддерживает его.</p>
+			<p><b>Возможные решения:</b></p>
+			<ul>
+			  <li>Обновите Ваш браузер / систему до актцальной версии</li>
+			  <li>Обратитесь к разработчику браузера производителю устройства</li>
+			  <li>Если есть возможность включить JavaScript через настройки браузера или системы, то включите его</li>
+			</ul>
+		  </div>
+		</noscript>
+
+		<!-- Раздел: О Header -->
+		<div class="column">
+		  <div class="column-content">
+			<h1>О компоненте</h1>
+			<h3>Что такое Header?</h3>
+			<p><b>Header</b> содержит вводное или навигационное содержимое для описания страницы.</p>
+			<p>Он обычно располагается в верхней части раздела, но это не является обязательным.</p>
+			<p>Термин &quot;header&quot; также часто относится к общей шапке веб-сайта, где обычно располагается имя и логотип сайта, меню, форма поиска и так далее. Когда элемент header относиться к любому элементу, разделяющему страницу на разделы, он семантически подразумевает заголовок или введение для содержимого своего родительского элемента.</p>
+			<h3>Header в F-Base</h3>
+			<p>В F-Base Header представлен ввиде блока в начале страницы и красиво оформлен (в стиле Material Design).</p>
+			<p>Header имеет всего два элемента внутри:</p>
+			<ol>
+			  <li>Заголовок - короткое слово, описывающее содержимое страницы (представлен тегом <code>&lt;h1&gt;</code>)</li>
+			  <li>Подзаголовок - чуть более детальное объяснение заголовка (представлен тегом <code>&lt;p&gt;</code>) <span class="text-muted">(можно и не использовать)</span></li>
+			</ol>
+		  </div>
+		  <ul class="column-links">
+			<li><a href="https://puzzleweb.ru/html/tag_header.php">Описание Header с сайта PuzzleWeb</a></li>
+			<li><a href="http://css-live.ru/articles/element-header.html">Описание Header с сайта CSS-LIVE</a></li>
+		  </ul>
+		</div>
+		<!-- /Раздел: О Header -->
+		
+		<!-- Раздел: Добавление Header -->
+		<div class="column column-border">
+		  <div class="column-content">
+			<h1>Добавление Header на страницу</h1>
+			<h3>Подготовка к добавлению Header</h3>
+			<p>Для начала необходимо <a href="../page_download.html">скачать</a> и подключить файл стилей <i>css/fbase.css</i> к нашей странице:</p>
+			<div class="codebox">
+			  <span class="codebox-head lang-html"></span>
+			  <code>
+				<i>&lt;-- Файл стилей F-Base --&gt;</i><br>
+				&lt;link href="<b>css/fbase.css</b>" rel="stylesheet"&gt;
+			  </code>
+			</div>
+			<div class="alert warning">
+			  <h4>Необходимо заранее поместить файл <b>fbase.css</b> в папку <b>css</b>!</h4>
+			  <p>Иначе стили не применятся.</p>
+			</div>
+			<h3>Добавление тега <code>&lt;header&gt;</code></h3>
+			<p>Теперь, когда все стили подключены, необходимо в корне тега <code>&lt;body&gt;</code> поместить тег <code>&lt;header&gt;</code>:</p>
+			<div class="codebox">
+			  <span class="codebox-head lang-html"></span>
+			  <code>
+				&lt;body&gt;<br><br>
+				&nbsp;&nbsp;<i>&lt;!-- Header --&gt;</i><br>
+				&nbsp;&nbsp;&lt;header&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Заголовок&lt;/h1&gt;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Подзаголовок&lt;/p&gt;<br>
+				&nbsp;&nbsp;&lt;/header&gt;<br>
+				&nbsp;&nbsp;<i>&lt;!-- .Header --&gt;</i><br><br>
+				&lt;/body&gt;
+			  </code>
+			</div>
+			<p>В этом случае, нам не нужно прописывать класс <code>f</code>, как это было в F-Base 0.4. Все стили применяются к тегу.</p>
+		  </div>
+		</div>
+		<!-- /Раздел: Добавление Header -->
+		  
+		<div class="alert success">
+		  <h4>Готово!</h4>
+		  <p>Теперь Header добавлен на страницу.</p>
+		</div>
+		  
+	  </div>
+	  <!-- /Container -->
+	</div>
+	<!-- /Plate -->
+
+  </body>
+</html>
+

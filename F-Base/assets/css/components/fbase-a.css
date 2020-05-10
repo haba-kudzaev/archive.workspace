@@ -1,0 +1,29 @@
+a {
+  word-wrap: break-word;
+  word-break: none;
+  word-spacing: none;
+  background-color: transparent;
+  color: #1880e0;
+  text-decoration: none;
+}
+
+a:active, a:hover {
+  background-color: transparent;
+  color: #1880e0;
+  border-bottom: 1px solid #1880e0;
+  border-bottom-style: dashed;
+}
+
+a:active, a:focus {
+  outline-style: none;
+  outline-width: 0px !important;
+  outline-color: none !important;
+  outline: none !important;
+}
+
+a.transparent {
+  border-bottom: 0px solid transparent;
+  border-bottom-style: none;
+}
+
+a:after { content: ""; }
