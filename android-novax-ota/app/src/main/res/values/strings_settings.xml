@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<string name="pref_check_wifi">Использовать Wi-Fi</string>
+	<string name="pref_check_wifi_desc">при проверке обновлений на сервере?</string>
+	
+</resources>

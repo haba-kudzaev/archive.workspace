@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:gravity="center">
+
+	<ImageView
+		android:src="@drawable/ic_launcher_home"
+		android:layout_width="100dp"
+		android:layout_height="100dp"
+		android:layout_marginBottom="10dp"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Установлена версия Nova X"
+		android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="CURRENT_VERSION"
+		android:id="@+id/tvInstalledVersion"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Версия на сервере"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_marginTop="10dp"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="OTA_VERSION"
+		android:id="@+id/tvOTAVersion"/>
+
+	<Button
+		android:layout_width="wrap_content"
+		style="?android:attr/buttonBarButtonStyle"
+		android:layout_height="wrap_content"
+		android:text="СКАЧАТЬ ВЕРСИЮ"
+		android:layout_marginTop="10dp"
+		android:id="@+id/btnDownloadApk"/>
+
+</LinearLayout>
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<!-- Основные строки -->
+	<string name="current_version">Текущая версия</string>
+	<string name="server_version">Версия на сервере</string>
+	<string name="update_size">Размер обновления</string>
+	<string name="update_branch">Ветка обновления</string>
+	
+	<!-- Режим: Nova X -->
+	<string name="nx_"></string>
+	
+	<!-- Режим: Nova Launcher -->
+	<string name="nl_"></string>
+	
+</resources>
