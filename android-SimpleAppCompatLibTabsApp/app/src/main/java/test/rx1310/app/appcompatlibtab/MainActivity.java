@@ -8,14 +8,12 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuItem;
-
+import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
-import android.util.*;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity
+ {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
