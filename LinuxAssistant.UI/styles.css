@@ -1,0 +1,131 @@
+/*!
+ * @author      rx1310 <rx1310@inbox.ru>
+ * @copyright   Copyright (c) o1310, 2020
+ * @license     MIT License
+ */
+
+*,
+*::before,
+*::after {
+  -webkit-touch-callout: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-user-select: none;
+          user-select: none;
+  outline: none;
+}
+
+@viewport { width: device-width; }
+
+@font-face {
+  font-family: 'Fira Mono';
+  src: url('fonts/FiraMono.ttf');
+}
+
+::selection {
+  background: #558b2f;
+  color: White;
+  text-shadow: none;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Fira Mono", sans-serif;
+  margin: 0;
+  line-height: 1.15;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+}
+
+header,
+footer {
+  text-align: center;
+  padding: 2em;
+  border: 1px solid Red;
+}
+
+main {
+  padding: 0 1.5em;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  color: #8bc34a;
+  background-color: transparent;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  overflow: none;
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+
+button  {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
