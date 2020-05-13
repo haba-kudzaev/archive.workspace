@@ -39,14 +39,15 @@ body {
           text-size-adjust: 100%;
 }
 
-header,
-footer {
+header {
   text-align: center;
   padding: 2em;
-  border: 1px solid Red;
+  border-bottom: 1px solid #558b2f;
+  margin-bottom: 2.5em;
 }
 
-main {
+main,
+footer {
   padding: 0 1.5em;
 }
 
