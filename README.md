@@ -1,3 +1,5 @@
+[VK](https://vk.com/rx1310_dev) | [Telegram](https://t.me/rx1310_dev)
+
 - **2048** - форк игры на HTML, CSS & JavaScript
 - **android-DirectReplyNotification** - пример уведомлений с ответом из шторки с [сайта](https://www.journaldev.com/15571/android-notification-direct-reply)
 - **android-houm** - мой лаунчер
