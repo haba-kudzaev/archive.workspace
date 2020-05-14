@@ -1,23 +1,22 @@
 package com.journaldev.directreplynotification;
 
+import android.app.Activity;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.RemoteInput;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
+import android.widget.Toast;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
-import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends Activity implements View.OnClickListener {
 
     String KEY_REPLY = "key_reply";
     String KEY_REPLY_HISTORY = "key_reply_history";
@@ -33,9 +32,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnBasicInlineReply = (Button) findViewById(R.id.btn_basic_inline_reply);
-        btnInlineReplyHistory = (Button) findViewById(R.id.btn_inline_replies_with_history);
-        txtReplied = (TextView) findViewById(R.id.txt_inline_reply);
+        btnBasicInlineReply = findViewById(R.id.btn_basic_inline_reply);
+        btnInlineReplyHistory = findViewById(R.id.btn_inline_replies_with_history);
+        txtReplied = findViewById(R.id.txt_inline_reply);
         btnBasicInlineReply.setOnClickListener(this);
         btnInlineReplyHistory.setOnClickListener(this);
 
