@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center">
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="BASIC INLINE REPLY NOTIFICATION"
+		android:id="@+id/btn_basic_inline_reply"/>
+
+	<TextView
+		android:id="@+id/txt_inline_reply"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Replied text will be displayed here"
+		android:layout_marginTop="8dp"
+		android:layout_marginLeft="8dp"
+		android:layout_marginRight="8dp"/>
+
+	<Button
+		android:id="@+id/btn_inline_replies_with_history"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="INLINE REPLIES WITH HISTORY"
+		android:layout_marginTop="8dp"/>
+
+</LinearLayout>
+

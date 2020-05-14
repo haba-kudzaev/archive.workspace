@@ -1,7 +1,11 @@
+[VK](https://vk.com/rx1310_dev) | [Telegram](https://t.me/rx1310_dev)
+
 - **2048** - форк игры на HTML, CSS & JavaScript
+- **android-DirectReplyNotification** - пример уведомлений с ответом из шторки с [сайта](https://www.journaldev.com/15571/android-notification-direct-reply)
 - **android-houm** - мой лаунчер
 - **android-Locker** - утилита для блокировки экрана устройства
 - **android-novax-ota** - на базе *android-SimpleUpdateMessage*
+- **android-SimpleAndroidShellExecutor** - отправка shell-команд (эмулятор терминала) [на примере [SnowVolf](https://t.me/VolfsChannel)]
 - **android-SimpleAppCompatLibTabsApp** - реализация вкладок (AppCompat)
 - **android-SimpleAppUpdate** - проверка изменений в файле на сервере (можно замутить ОТА)
 - **android-SimpleInjectJsApp** - пример инжектирования JavaScript-кода в Android

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:padding="16dp">
+
+	<EditText
+		android:layout_width="match_parent"
+		android:maxLines="2"
+		android:layout_height="wrap_content"
+		android:hint="command"
+		android:id="@+id/field_exec"/>
+
+	<CheckBox
+		android:layout_marginTop="16dp"
+		android:text="Super User"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/checbox_su"/>
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Execute"
+		android:textAllCaps="false"
+		android:layout_gravity="end"
+		android:id="@+id/btn_execute"/>
+
+	<ScrollView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:typeface="monospace"
+			android:textSize="12sp"
+			android:id="@+id/command_output"/>
+
+	</ScrollView>
+
+</LinearLayout>
+
