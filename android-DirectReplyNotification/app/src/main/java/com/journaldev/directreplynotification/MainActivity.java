@@ -15,6 +15,7 @@ import android.widget.TextView;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -90,7 +91,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 String reply = charSequence.toString();
 
                 txtReplied.setText("Reply is " + reply);
-
+				Toast.makeText(this, reply, Toast.LENGTH_LONG).show();
 
                 //Update the notification to show that the reply was received.
                 NotificationCompat.Builder repliedNotification =
