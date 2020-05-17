@@ -26,6 +26,7 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 import o1310.rx1310.app.id1.MainActivity;
 import android.app.Activity;
+import android.content.pm.PackageManager;
 
 public class MainActivity extends AppCompatActivity {
 	
@@ -52,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 		WebSettings WebViewSettings = mWebView.getSettings();
 		WebViewSettings.setDefaultTextEncodingName("utf-8");
 		mWebView.addJavascriptInterface(new JavaScriptInterface(this), "jsFn");
-		mWebView.setBackgroundColor(Color.parseColor("#000000"));
+		mWebView.setBackgroundColor(Color.parseColor("#ffffff"));
 		mWebView.setFocusable(true);
 		mWebView.setFocusableInTouchMode(true);
 		mWebView.getSettings().setJavaScriptEnabled(true);
@@ -60,11 +61,12 @@ public class MainActivity extends AppCompatActivity {
 		mWebView.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
 		mWebView.getSettings().setDomStorageEnabled(true);
 		mWebView.getSettings().setDatabaseEnabled(true);
-		mWebView.getSettings().setDatabasePath("/data/data/o1310.rx1310.app.id1/databases/");
+		mWebView.getSettings().setDatabasePath("/data/data/" + getPackageName() + "/databases/");
 		mWebView.getSettings().setAppCacheEnabled(true);
 		mWebView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
 		mWebView.getSettings().setJavaScriptEnabled(true);
 		mWebView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
+		
 		mWebView.setWebViewClient(new WebViewClient() {
 
 				public boolean shouldOverrideUrlLoading(WebView view, String url) {
@@ -134,6 +136,11 @@ public class MainActivity extends AppCompatActivity {
 		@JavascriptInterface
 		public void showToast(String t) {
 			Toast.makeText(mContext, t, Toast.LENGTH_SHORT).show();
+		}
+		
+		@JavascriptInterface
+		public void exitApp() {
+			finish();
 		}
 		
 	}

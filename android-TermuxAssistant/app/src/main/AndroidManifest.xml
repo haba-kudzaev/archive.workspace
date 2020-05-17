@@ -35,24 +35,37 @@
 			android:name=".SettingsActivity">
 
 			<intent-filter>
+				
 				<action android:name="android.intent.action.APPLICATION_PREFERENCES" />
-				<category android:name="com.cyanogenmod.category.LAUNCHER_PREFERENCES" />
 				<action android:name="android.intent.action.VIEW" />
+					
+				<category android:name="com.cyanogenmod.category.LAUNCHER_PREFERENCES" />
 				<category android:name="android.intent.category.DEFAULT" />
 				<category android:name="android.intent.category.BROWSABLE"/>
+					
                 <data
-                    android:host="id1.settings"
-                    android:scheme="rx1310"/>
+					android:host="id1.settings"
+					android:scheme="rx1310"/>
+					
 			</intent-filter>
+			
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value=".MainActivity"/>
 
 		</activity>
 		
 		<activity
-			android:theme="@style/AppTheme.NoActionBar"
 			android:name=".MainActivity"/>
 		
-		<meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="true" />
-		<meta-data android:name="android.max_aspect" android:value="2.1" />
+		<meta-data
+			android:name="android.webkit.WebView.EnableSafeBrowsing"
+			android:value="true" />
+		
+		<meta-data
+			android:name="android.max_aspect"
+			android:value="2.1" />
 		
     </application>
+	
 </manifest>

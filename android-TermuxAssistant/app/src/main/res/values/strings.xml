@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	
-	<string name="application_name">Assistant for Termux</string>
+	<string name="application_name">ID1</string>
 	<string name="application_author">rx1310</string>
 	<string name="application_builder">@string/application_author</string>
 	

@@ -11,10 +11,11 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
+import android.widget.ListView;
 
-public class SettingsActivity extends PreferenceActivity
- {
+public class SettingsActivity extends PreferenceActivity {
 	
+	ListView mListView;
 	SharedPreferences mSharedPreferences;
 
 	@Override
@@ -23,9 +24,13 @@ public class SettingsActivity extends PreferenceActivity
 		setTheme(R.style.AppTheme_Preferences);
 		super.onCreate(savedInstanceState);
 
-		addPreferencesFromResource(R.layout.activity_settings);
+		addPreferencesFromResource(R.xml.activity_settings);
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+		getActionBar().setDisplayHomeAsUpEnabled(true);
 		mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+		
+		mListView = findViewById(android.R.id.list);
+		mListView.setDivider(null);
 		
 	}
 	

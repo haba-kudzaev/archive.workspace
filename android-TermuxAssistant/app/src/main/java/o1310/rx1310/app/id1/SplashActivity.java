@@ -12,8 +12,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 
-public class SplashActivity extends AppCompatActivity
- {
+public class SplashActivity extends AppCompatActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +33,7 @@ public class SplashActivity extends AppCompatActivity
 				}
 
 			}, 200);
+			
 	}
 
 }
