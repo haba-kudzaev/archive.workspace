@@ -9,6 +9,7 @@
 - **android-SimpleAppCompatLibTabsApp** - реализация вкладок (AppCompat)
 - **android-SimpleAppUpdate** - проверка изменений в файле на сервере (можно замутить ОТА)
 - **android-SimpleInjectJsApp** - пример инжектирования JavaScript-кода в Android
+- **android-SimpleLauncher** - пример приложения со списком установленных приложений
 - **android-SimpleRandomTextApp** - отображает рандомный текст в Toast
 - **android-SimpleUpdateMessage** - продолжение *android-SimpleAppUpdate*
 - **android-TermuxAssistant** - помощник и гайды по Termux
