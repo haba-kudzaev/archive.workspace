@@ -1,0 +1,35 @@
+
+$s_card-shadow: 0 0.15em 0.3em -0.2em rgba(0, 0, 0, .4);
+$s_card-shadow_hover: 0 0.15em 0.8em -0.2em rgba(0, 0, 0, .4);
+
+.s_card {
+
+  background-color: white;
+  padding: .5em 1.2em;
+  margin: .5em;
+
+  -webkit-transition-duration: .8s;
+     -moz-transition-duration: .8s;
+       -o-transition-duration: .8s;
+          transition-duration: .8s;
+
+  -webkit-box-shadow: $s_card-shadow;
+     -moz-box-shadow: $s_card-shadow;
+          box-shadow: $s_card-shadow;
+
+  -webkit-border-radius: .5em;
+     -moz-border-radius: .5em;
+          border-radius: .5em;
+
+  &:active {
+    background-color: #45668e;
+    color: white;
+  }
+
+  &:hover {
+    -webkit-box-shadow: $s_card-shadow_hover;
+       -moz-box-shadow: $s_card-shadow_hover;
+            box-shadow: $s_card-shadow_hover;
+  }
+
+}

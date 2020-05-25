@@ -1,0 +1,65 @@
+
+// ? Заглушка
+.dummy {
+  background: #ffffff;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+}
+
+// ? Шрифты и иконки
+@import 'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap';
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+
+// ! Это необходимо для нормальной работы сетки
+*,
+*::before,
+*::after {
+  -webkit-touch-callout: none; // https://clck.ru/9HHvq
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  outline: none;
+}
+
+// ? Конфигурация основного контейнера (body)
+body {
+  background-color: whitesmoke;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  line-height: 1.15;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+img {
+  
+  &.circle {
+    -webkit-border-radius: 100%;
+       -moz-border-radius: 100%;
+            border-radius: 100%;
+  }
+
+}
+
+// ! Выравнивание страницы по всей ширине (необходимо)
+@-ms-viewport { width: device-width; }
+@viewport     { width: device-width; }
+
+// ! Подключение сетки Bootstrap Grid v4
+@import 'twbs-grid/functions';
+@import 'twbs-grid/variables';
+@import 'twbs-grid/mixins/breakpoints';
+@import 'twbs-grid/mixins/grid-framework';
+@import 'twbs-grid/mixins/grid';
+@import 'twbs-grid/grid';
+@import 'twbs-grid/utilities/flex';

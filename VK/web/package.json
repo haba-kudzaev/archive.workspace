@@ -1,0 +1,26 @@
+{
+  "name": "vk-samples",
+  "version": "1.0.0",
+  "description": "Примеры UI для VK (web)",
+  "main": "index.js",
+  "scripts": {
+    "sass-w": "sass --watch scss:build/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rx1310/workspace.git"
+  },
+  "keywords": [
+    "vk",
+    "sass",
+    "html",
+    "rx1310",
+    "codev01"
+  ],
+  "author": "rx1310 (o1310)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rx1310/workspace/issues"
+  },
+  "homepage": "https://github.com/rx1310/workspace#readme"
+}
