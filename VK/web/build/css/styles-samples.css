@@ -1,0 +1,23 @@
+.s_card {
+  background-color: white;
+  padding: .5em 1.2em;
+  margin: .5em;
+  -webkit-transition-duration: .8s;
+  -moz-transition-duration: .8s;
+  -o-transition-duration: .8s;
+  transition-duration: .8s;
+  -webkit-box-shadow: 0 0.15em 0.3em -0.2em rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0.15em 0.3em -0.2em rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0.15em 0.3em -0.2em rgba(0, 0, 0, 0.4);
+  -webkit-border-radius: .5em;
+  -moz-border-radius: .5em;
+  border-radius: .5em; }
+  .s_card:active {
+    background-color: #45668e;
+    color: white; }
+  .s_card:hover {
+    -webkit-box-shadow: 0 0.15em 0.8em -0.2em rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0.15em 0.8em -0.2em rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0.15em 0.8em -0.2em rgba(0, 0, 0, 0.4); }
+
+/*# sourceMappingURL=styles-samples.css.map */

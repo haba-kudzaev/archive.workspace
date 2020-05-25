@@ -1,0 +1,45 @@
+.post {
+  background-color: white;
+  margin: 5em auto;
+  -webkit-box-shadow: 0 0.15em 0.3em -0.2em rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0.15em 0.3em -0.2em rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0.15em 0.3em -0.2em rgba(0, 0, 0, 0.4); }
+  @media (min-width: 320px) {
+    .post {
+      width: 290px; } }
+  @media (min-width: 768px) {
+    .post {
+      width: 600px; } }
+  @media (min-width: 1024px) {
+    .post {
+      width: 768px; } }
+
+.post-head {
+  width: 100%;
+  background-color: white;
+  padding: .9em;
+  border-bottom: 1px solid rgba(169, 169, 169, 0.329);
+  position: sticky;
+  top: 0;
+  z-index: 1000; }
+  .post-head figure {
+    float: left;
+    margin: 0; }
+  .post-head .post-head_user {
+    margin: .5em 0em .2em 3.8em; }
+    .post-head .post-head_user h3 {
+      margin: 0; }
+    .post-head .post-head_user p {
+      margin: 0;
+      opacity: 0.5; }
+
+.post-body {
+  padding: .9em; }
+  .post-body .post-body_images {
+    overflow: auto;
+    list-style: none;
+    white-space: nowrap; }
+    .post-body .post-body_images li {
+      display: inline-block; }
+
+/*# sourceMappingURL=post.css.map */
