@@ -3,6 +3,7 @@
 - **android-houm** - мой лаунчер
 - **android-Locker** - утилита для блокировки экрана устройства
 - **android-novax-ota** - на базе *android-SimpleUpdateMessage*
+- **android-QuickAccess** - приложение, которое вызывается в качестве ассистента
 - **android-SimpleAndroidShellExecutor** - отправка shell-команд (эмулятор терминала) [на примере [SnowVolf](https://t.me/VolfsChannel)]
 - **android-SimpleAppCompatLibTabsApp** - реализация вкладок (AppCompat)
 - **android-SimpleAppUpdate** - проверка изменений в файле на сервере (можно замутить ОТА)
