@@ -1,6 +1,8 @@
 - **2048** - форк игры на HTML, CSS & JavaScript
+- **android-ClipboardTest** - тест буфера обмена
 - **android-DirectReplyNotification** - пример уведомлений с ответом из шторки с [сайта](https://www.journaldev.com/15571/android-notification-direct-reply)
 - **android-houm** - мой лаунчер
+- **android-InstalledAppsList** - вывод установленных приложений списком
 - **android-Locker** - утилита для блокировки экрана устройства
 - **android-novax-ota** - на базе *android-SimpleUpdateMessage*
 - **android-QuickAccess** - приложение, которое вызывается в качестве ассистента
