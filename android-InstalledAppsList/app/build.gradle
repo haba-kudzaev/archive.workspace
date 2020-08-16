@@ -1,0 +1,26 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    
+
+    defaultConfig {
+        applicationId "test.rx1310.installedappslist"
+        minSdkVersion 14
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+	api 'com.android.support:appcompat-v7:27.+'
+	api 'com.android.support:design:27.+'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}
