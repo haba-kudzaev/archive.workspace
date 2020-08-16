@@ -42,7 +42,7 @@ public class MainActivity extends Activity {
         userInstalledApps.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 				@Override
 				public void onItemClick(AdapterView<?> adapterView, View view, final int i, long l) {
-
+					Toast.makeText(MainActivity.this, installedApps.get(i).packages, Toast.LENGTH_SHORT).show();
 					String[] colors = {" Open App", " App Info"};
 					AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
 					builder.setTitle("Choose Action")
@@ -52,6 +52,7 @@ public class MainActivity extends Activity {
                                 if (which==0){
                                     Intent intent = getPackageManager().getLaunchIntentForPackage(installedApps.get(i).packages);
                                     if(intent != null){
+										Toast.makeText(MainActivity.this, installedApps.get(i).packages, Toast.LENGTH_SHORT).show();
                                         startActivity(intent);
                                     }
                                     else {
